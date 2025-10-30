@@ -3,31 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do App</title>
+  <title>DC To-do-list</title>
 </head>
 <body>
-  <header>
-    <div>
-      <label for="title">Title</label>
-      <input type="text" id="title" placeholder="What’s on your mind?">
-    </div>
-    <button id="submit">Add task</button>
-  </header>
   <main>
-    <div>
-      <button>ALL</button>
-      <button>ACTIVE</button>
-      <button>DONE</button>
-    </div>
-    <div>
-      <ul>
-        <li>Walking a dog</li>
-        <button>Done</button>
-        <li>swimming</li>
-        <li>reading</li>
-      </ul>
-    </div>
+    <input type="text" id="taskInput">
+    <button id="getTask">Add</button>
   </main>
-  <footer></footer>
+  <ul id="active">
+  </ul>
+  <ul id="done">
+  </ul>
+  <ul id="abandon">
+  </ul>
+
+  <script src="script.js"></script>
 </body>
 </html>
