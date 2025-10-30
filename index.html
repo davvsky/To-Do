@@ -4,28 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DC To-do-list</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <input type="text" id="taskInput">
-    <button id="getTask">Add</button>
-  </main>
-  <section>
-    <h2>Active</h2>
-    <ul id="active">
-    </ul>  
-  </section>
-  <section> 
-    <h2>Done</h2> 
-    <ul id="done">
-    </ul>
-  </section>
-  <section>
-    <h2>Abandon</h2>
-    <ul id="abandon">
-    </ul>
-  </section>
+  <div class="container">
 
-  <script src="script.js"></script>
+    <div class="input-section">
+      <h1>Add a new Task</h1>
+        <input type="text" id="taskInput">
+        <button id="getTask">Add</button>
+    </div>
+
+    <div class="lists-section">
+      <div class="list-container">
+        <h2>Active</h2>
+        <ul id="active"></ul>  
+      </div>
+      <div class="list-container">
+        <h2>Done</h2> 
+        <ul id="done"></ul>        
+      </div>
+      <div class="list-container">
+        <h2>Abandon</h2>
+        <ul id="abandon"></ul>        
+      </div>
+    </div>
+  </div>
 </body>
+
+<script src="script.js"></script>
 </html>
